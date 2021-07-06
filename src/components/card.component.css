@@ -1,0 +1,22 @@
+.card{
+  
+    margin: 2vh;
+    width: 15vh;
+    height: 15vh;
+    overflow: hidden;
+    image-rendering: auto;
+    border:  #413f3f solid 0.5vh;
+    border-radius: 50%;
+    text-align:center;
+    background: rgb(221,1,40);
+    background: linear-gradient(180deg, rgba(221,1,40,1) 45%, rgba(65,63,63,1) 45%, rgba(65,63,63,1) 55%, rgba(255,255,255,1) 55%);
+
+}
+
+.card img{
+    
+    image-rendering: auto;
+    width: 100%;
+
+}
+

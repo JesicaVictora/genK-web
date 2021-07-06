@@ -1,0 +1,70 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "start": "webpack serve --config=webpack.dev.js",
+    "build": "webpack --config=webpack.prod.js",
+    "test": "jest --coverage" ,
+    "lint": "semistandard"
+  },
+  "commitlint": {
+    "extends": "@commitlint/config-conventional"
+  },
+  "semistandard": {
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(lit-element|lit-html|lit|@lit/reactive-element)/)"
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@testing-library/dom": "^7.31.2",
+    "babel-jest": "^27.0.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^6.0.0",
+    "jest": "^27.0.4",
+    "mini-css-extract-plugin": "^1.6.0",
+    "semistandard": "^16.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.7.4",
+    "axios": "^0.21.1",
+    "lit": "^2.0.0-rc.2",
+    "pokemon-chart": "0.0.1"
+  }
+}

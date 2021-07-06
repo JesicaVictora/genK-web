@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  web:
+    build:
+      context: ./
+    image: web:1.0.0
+    ports:
+      - "80:80"
+    restart: always
+   
+  

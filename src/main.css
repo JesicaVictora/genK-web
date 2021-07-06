@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+height: 100vh;
+
+}
+header{
+  height: 3rem;
+
+}
+.twitter-container{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+.twitter-user-container{
+
+  max-width: 50vh;
+  
+}
